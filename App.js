@@ -4,9 +4,13 @@ import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 import HomeScreen from "./src/screens/homeScreen.jsx";
 import { Provider } from "./src/contexts/blogContext.js";
+import ShowScreen from "./src/screens/ShowScreen";
+import CreatePostScreen from "./src/screens/CreateScreen";
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen
+    Home: HomeScreen,
+    Show: ShowScreen,
+    Create: CreatePostScreen
   },
   {
     initialRouteName: "Home",
