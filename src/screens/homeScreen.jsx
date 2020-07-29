@@ -32,7 +32,16 @@ const HomeScreen = ({ navigation }) => {
           );
         }}
       />
-      <Button title="Add blog post" onPress={() => addBlogPost()} />
+      <Button
+        title="Add blog post"
+        onPress={() =>
+          addBlogPost(
+            state.length + 1,
+            `new post ${state.length + 1}`,
+            "some dummy text"
+          )
+        }
+      />
     </View>
   );
 };
